@@ -4,6 +4,8 @@ My educational website features a variety of random food selections, utilizing F
 ## Preview
 ![image](https://github.com/MCPETH/kinraidee/assets/30114061/7221b29a-2cbb-4932-90fc-442ba68bb861)
 
+## Modal Example.
+
 ## Setup
 ```js
 // Your web app's Firebase configuration
