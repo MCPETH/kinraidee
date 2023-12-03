@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="codecolor.css"> -->
+</head>
+
+<body>
+
+
+
+  <h1>Hello, worlddd!</h1>
+  <div id="showdata">${dataset}</div>
+
+
+
+  <main class="align-items-center bg-dark" style="min-height: 75vh; display: flex; z-index: 80;">
+
+    <div class="container darkjingg shadow-lg" style="max-width: 500px; border-radius: 25px; z-index: 0">
+      <h1 class="text-center text-warning darkjingg headmargine">เย็นนี้กินไรดี</h1>
+      <h2 class="text-center text-danger darkjingg headmargine">แค่คุณพูดว่า " หิว "</h2>
+      <h3 class="text-center text-primary darkjingg headmargine">เรา ก็ พ ร้ อ ม ที่ จะ ช่ ว ย คุ ณ</h3>
+      <h4 class="text-center text-success darkjingg headmargine">v V v
+        <div class="row p-0 darkjingg">
+          <div class="text-dark align-items-center text-center darkjingg">
+            <div class="row p-3 darkjingg">
+              <button id="loadButton" type="button" class="btn btn-outline-danger px-4 rounded-pill shadow-lg openDB"
+                data-bs-toggle="modal" data-bs-target="#imgpopup">
+                กินไรดี
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade p-0 m-0" id="imgpopup" tabindex="-1" aria-labelledby="imgpopup" aria-hidden="true">
+      <div class="modal-dialog p-0">
+        <div class="modal-content p-0 m-0">
+          <div class="modal-header bg-danger">
+            <h5 class="modal-title text-white" id="imgpopup">ลองกินอันนี้ดูมั๊ย?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-dark">
+            <!-- <img class= "card-img-top openBtn" src="" style="width:100%"> -->
+          </div>
+          <div class="modal-footer darknormal">
+            <button type="button" class="btn btn-outline-danger text-white disabled" data-bs-dismiss="">เพิ่มอาหารที่ชอบ
+              Coming soon</button>
+            <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">ปิด</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- <script>
+    let dataset = {
+      "foodlist": {
+        "noodle": [
+          {
+            "strFoodname": "s",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "khaw_kang": [
+          {
+            "strFoodname": "ข้าวราดแกง",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "khaw_munkai": [
+          {
+            "strFoodname": "ข้าวมันไก่",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "kanom_jeen": [
+          {
+            "strFoodname": "ขนมจีน",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "sukee": [
+          {
+            "strFoodname": "สุกี้",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "yentafour": [
+          {
+            "strFoodname": "เย็นตาโฟ",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "ka_muu": [
+          {
+            "strFoodname": "ข้าวขาหมู",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "noodle_numtok": [
+          {
+            "strFoodname": "ก๋วยเตี๋ยวน้ำตก",
+            "strPhoto": "",
+            "strSource": ""
+          }
+        ],
+        "noodle_numsai": [
+          {
+            "strFoodname": "ก๋วยเตี๋ยวน้ำใส",
+            "strPhoto": "eiei",
+            "strSource": ""
+          }
+        ]
+      }
+    }
+    
+
+    console.log(dataset.foodlist.sukee[0].strFoodname);
+
+    var htmlText = '';
+for (var key in dataset) {
+  htmlText += '<div id="showdata" ></div>' + dataset.foodlist.sukee[0].strFoodname;
+  htmlText += '<p class="p-name"> Name: ' + dataset.foodlist.sukee[0].strFoodname + '</p>';
+}
+
+$('body').append(htmlText);
+
+//JSON.stringify(dataset);
+//JSON.parse(dataset)
+// alert(JSON.parse(dataset)[0].noodle.strFoodname)
+  </script> -->
+
+  <!-- <script>
+  async function GetDB()
+</script> -->
+
+  <!-- <script>
+
+  firebase.database().ref('food_db').once('value',   function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+      var childKey = childSnapshot.key;
+      var childData = childSnapshot.val();
+      // ...
+    });
+  });
+  
+</script> -->
+
+
+</body>
+
+<script src="storedb.js" type="module"></script>
+
+</html>
+<style type="text/css">
+  body {
+    background: #212529 !important;
+  }
+
+  .headmargine {
+    margin-top: revert !important;
+    margin-bottom: revert !important;
+    font-weight: 500 !important;
+    line-height: 0.8 !important;
+    /* line-height: 1.2 !important; */
+  }
+
+  .darkplusplus {
+    background: #212529 !important;
+  }
+
+  .darknormal {
+    background: #1b1e22 !important;
+  }
+
+  .darkjingg {
+    background: #0f1013 !important;
+    /* margin-top: initial !important;
+    margin-bottom: initial !important; */
+  }
+
+  .modal-header {
+    border-top-left-radius: initial !important;
+    border-top-right-radius: initial !important;
+    border-color: initial !important;
+    --bs-border-color: initial !important;
+  }
+
+  .modal-footer {
+    border-bottom-right-radius: initial !important;
+    border-bottom-left-radius: initial !important;
+    border-color: initial !important;
+    --bs-border-color: initial !important;
+  }
+</style>
+<!-- --bs-border-color -->
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<script src="first.js"></script>
