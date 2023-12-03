@@ -5,6 +5,8 @@ My educational website features a variety of random food selections, utilizing F
 ![image](https://github.com/MCPETH/kinraidee/assets/30114061/7221b29a-2cbb-4932-90fc-442ba68bb861)
 
 ## Modal Example.
+![image](https://github.com/MCPETH/kinraidee/assets/30114061/004b1d3d-8a5b-43d0-8bcd-e70881f5dca7)
+
 
 ## Setup
 ```js
